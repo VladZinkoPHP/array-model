@@ -1,0 +1,28 @@
+{
+  "name": "zingle-com/array-model",
+  "description": "Model primitive arrays.",
+  "license": "MIT",
+  "authors": [{
+    "name": "Zingle",
+    "homepage": "https://github.com/ZingleCom/array-model"
+  },{
+    "name": "Zachary Quintana",
+    "homepage": "https://github.com/zquintana"
+  }],
+  "require": {
+    "php": "~7.1",
+    "ext-json": "*",
+    "phootwork/collection": ">=1.5",
+    "zingle-com/php-enum": "^1.1",
+    "illuminate/support": "^5.8"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "ZingleCom\\ArrayModel\\Tests\\": "tests",
+      "ZingleCom\\ArrayModel\\": "src"
+    }
+  }
+}
