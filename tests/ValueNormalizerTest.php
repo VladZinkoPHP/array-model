@@ -1,14 +1,13 @@
 <?php
 
-namespace ZingleCom\ArrayModel\Test;
+namespace ZingleCom\ArrayModel\Tests;
 
 use PHPUnit\Framework\TestCase;
 use ZingleCom\ArrayModel\Cast;
 use ZingleCom\ArrayModel\ModelCollection;
-use ZingleCom\ArrayModel\Test\Model\TestEnum;
-use ZingleCom\ArrayModel\Test\Model\TestModel;
+use ZingleCom\ArrayModel\Tests\Model\TestEnum;
+use ZingleCom\ArrayModel\Tests\Model\TestModel;
 use ZingleCom\ArrayModel\ValueNormalizer;
-use ZingleCom\Enum\AbstractEnum;
 
 /**
  * Class ValueNormalizerTest

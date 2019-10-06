@@ -1,6 +1,8 @@
 Zingle Community - Array Model
 ==============================
 
+[![Build Status](https://travis-ci.com/Zingle/array-model.svg?branch=master)](https://travis-ci.com/Zingle/array-model)
+
 ## What and why?
 
 Model associative array's as objects. This is useful when you would like some description 

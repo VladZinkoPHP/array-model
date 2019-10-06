@@ -56,7 +56,9 @@ abstract class AbstractModel implements \JsonSerializable
 
         $this->normalizer   = new ValueNormalizer();
         $this->castedValues = new Map();
-        $this->transformer  = ($this->transformerClass)();
+
+        $transformerClass  = $this->transformerClass;
+        $this->transformer = new $transformerClass();
     }
 
     /**

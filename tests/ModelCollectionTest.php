@@ -1,10 +1,10 @@
 <?php
 
-namespace ZingleCom\ArrayModel\Test;
+namespace ZingleCom\ArrayModel\Tests;
 
 use PHPUnit\Framework\TestCase;
 use ZingleCom\ArrayModel\ModelCollection;
-use ZingleCom\ArrayModel\Test\Model\TestModel;
+use ZingleCom\ArrayModel\Tests\Model\TestModel;
 
 /**
  * Class ModelCollectionTest

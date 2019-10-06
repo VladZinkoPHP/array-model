@@ -1,6 +1,6 @@
 <?php
 
-namespace ZingleCom\ArrayModel\Test\Model;
+namespace ZingleCom\ArrayModel\Tests\Model;
 
 use ZingleCom\ArrayModel\AbstractModel;
 
