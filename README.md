@@ -2,6 +2,7 @@ Zingle Community - Array Model
 ==============================
 
 [![Build Status](https://travis-ci.com/Zingle/array-model.svg?branch=master)](https://travis-ci.com/Zingle/array-model)
+[![Coverage Status](https://coveralls.io/repos/github/Zingle/array-model/badge.svg?branch=master)](https://coveralls.io/github/Zingle/array-model?branch=master)
 
 ## What and why?
 
