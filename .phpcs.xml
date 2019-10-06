@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ruleset name="Zingle Standard">
+    <description>Zingle PHP coding standard</description>
+
+    <rule ref="vendor/escapestudios/symfony2-coding-standard/Symfony">
+        <exclude name="Symfony.Commenting.License.Warning" />
+        <exclude name="Symfony.Commenting.FunctionComment.MissingParamComment" />
+        <exclude name="Symfony.Functions.Arguments.Invalid" />
+        <exclude name="Zend.NamingConventions.ValidVariableName.MemberVarContainsNumbers" />
+    </rule>
+
+
+    <file>./src</file>
+</ruleset>

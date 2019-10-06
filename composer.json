@@ -10,19 +10,30 @@
     "homepage": "https://github.com/zquintana"
   }],
   "require": {
-    "php": "~7.1",
+    "php": "~7.2",
     "ext-json": "*",
     "phootwork/collection": ">=1.5",
     "zingle-com/php-enum": "^1.1",
     "illuminate/support": "^5.8"
   },
   "require-dev": {
-    "phpunit/phpunit": "^6.5"
+    "phpunit/phpunit": "^8.3",
+    "escapestudios/symfony2-coding-standard": "^3.9",
+    "php-coveralls/php-coveralls": "^2.1"
   },
   "autoload": {
     "psr-4": {
       "ZingleCom\\ArrayModel\\Tests\\": "tests",
       "ZingleCom\\ArrayModel\\": "src"
     }
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit",
+    "test-no-coverage": "@test --no-coverage",
+    "check-standards": "./vendor/bin/phpcs -p",
+    "test-all": [
+      "@check-standards",
+      "@test"
+    ]
   }
 }
