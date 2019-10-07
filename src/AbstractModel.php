@@ -84,7 +84,7 @@ abstract class AbstractModel implements \JsonSerializable
      *
      * @return AbstractModel
      */
-    public function setAttributes(array $attributes): AbstractModel
+    public function setAttributes(array $attributes): self
     {
         $this->attributes = new Map(Arr::camelCaseKeys($attributes));
 
