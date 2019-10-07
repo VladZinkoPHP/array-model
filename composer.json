@@ -14,7 +14,7 @@
     "ext-json": "*",
     "phootwork/collection": ">=1.5",
     "zingle-com/php-enum": "^1.1",
-    "illuminate/support": "^5.8"
+    "illuminate/support": "^5.4"
   },
   "require-dev": {
     "phpunit/phpunit": "^8.3",
