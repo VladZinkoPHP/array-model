@@ -52,13 +52,13 @@ abstract class AbstractModel implements \JsonSerializable
      */
     public function __construct(array $attributes = [])
     {
-        $this->setAttributes($attributes);
-
         $this->normalizer   = new ValueNormalizer();
         $this->castedValues = new Map();
 
         $transformerClass  = $this->transformerClass;
         $this->transformer = new $transformerClass();
+
+        $this->setAttributes($attributes);
     }
 
     /**
@@ -69,6 +69,18 @@ abstract class AbstractModel implements \JsonSerializable
     public static function fromJson(string $json): self
     {
         return new static(json_decode($json, $assoc = true));
+    }
+
+    /**
+     * @param PropTransformerInterface $transformer
+     *
+     * @return AbstractModel
+     */
+    public function setTransformer(PropTransformerInterface $transformer): self
+    {
+        $this->transformer = $transformer;
+
+        return $this;
     }
 
     /**
@@ -86,7 +98,7 @@ abstract class AbstractModel implements \JsonSerializable
      */
     public function setAttributes(array $attributes): self
     {
-        $this->attributes = new Map(Arr::camelCaseKeys($attributes));
+        $this->attributes = $this->transformer->transform($attributes);
 
         return $this;
     }
