@@ -23,6 +23,6 @@ class AbstractModelTest extends TestCase
             ->method('transform')
         ;
 
-        $model->setAttributes([]);
+        $model->setTransformer($transformer)->setAttributes([]);
     }
 }
